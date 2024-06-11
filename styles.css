@@ -1,0 +1,400 @@
+
+
+
+
+.carousel {
+    background: #EEE;
+}
+
+.carousel-cell img{
+    height: 100%;
+    width: 100%;
+}
+.carousel-cell {
+    width: 50%;
+    height: 500px;
+    margin-right: 10px;
+    background-color: firebrick;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+/* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} */
+
+#banner-image img{
+    width: 100%;
+}
+
+
+
+/* css for jquery header plugin start */
+
+.cd-main-content {
+    padding-top: 50px; /* Adjust to match your header height */
+}
+
+/* Secondary nav styling */
+.cd-secondary-nav {
+    position: relative;
+    width: 100%;
+    background: #F474DC;
+}
+
+.cd-secondary-nav-trigger {
+    display: none; /* Hidden for desktop, visible on smaller screens */
+}
+
+.cd-secondary-nav nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.cd-secondary-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cd-secondary-nav ul li {
+    margin: 0 10px;
+}
+
+.cd-secondary-nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+/* .cd-secondary-nav ul li a:hover,
+.cd-secondary-nav ul li a.active {
+    color: white;
+} */
+
+/* Fixed position styling */
+.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #F474DC;
+}
+
+#section1{
+    background-color: #fd788b;
+}
+#section2{
+    background-color: #feb1b7;
+}
+#section3{
+    background-color: #fedcdb;
+}
+#section4{
+    background-color: #febecc;
+}
+#section5{
+    background-color: #fe6694;
+}
+
+/* Mobile navigation */
+@media only screen and (max-width: 768px) {
+    #contact-me{
+        flex-direction: column !important;
+    }
+    #contact-me .contact-card{
+        width: 100%;
+    }
+    #contact-parent{
+        width: 100% !important;
+    }
+    #about-me{
+        flex-direction: column !important;
+    }
+    #about-me .about-me-child1{
+        justify-content: center !important;
+    }
+    #about-me .about-me-child2{
+        justify-content: center !important;
+    }
+    #about-me .about-me-child2 p {
+        text-align: center !important;
+    }
+    .carousel-cell{
+        width: 100%;
+    }
+    video{
+        width: 100%;
+    }
+    #cards-conatiner{
+        flex-direction: column;
+    }
+    .cd-secondary-nav-trigger {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        background: #F474DC;
+        text-align: center;
+    }
+
+    .cd-secondary-nav nav {
+        display: none;
+    }
+
+    .cd-secondary-nav nav.is-visible {
+        display: block;
+    }
+
+    .cd-secondary-nav ul {
+        flex-direction: column;
+    }
+
+    .cd-secondary-nav ul li {
+        margin: 10px 0;
+    }
+}
+body{
+    background: black;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+/* Section styling */
+.cd-section {
+    padding: 50px 20px;
+}
+
+.cd-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 ,h3 , p{
+    font-family: monospace;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.cd-main-content{
+    padding-bottom: 50px;
+    background-color: black;
+    text-align: center;
+   
+}
+#menu-mobile{
+    font-family: monospace !important;
+    font-weight: bold;
+}
+
+.cd-secondary-nav nav ul li a b{
+    font-size: 20px;
+    
+    font-family: monospace;
+}
+
+/* css for jquery header plugin end */
+
+#about-me{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#about-me .about-me-child1
+{
+    display: flex;
+}
+
+#about-me .about-me-child2
+{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;;
+}
+
+.about-me-child1 :hover{
+    animation: rotate-animation 2s ease-out forwards;
+}
+@keyframes rotate-animation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+
+
+
+#cards-conatiner.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#cards-conatiner .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#cards-conatiner .card:hover {
+    transform: translateY(-10px);
+}
+
+#cards-conatiner .card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#cards-conatiner.card p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;;
+}
+
+.footer-group {
+    padding: 10px 0;
+    font-size: 12px;
+    background-color: grey;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+}
+
+.avatar {
+    padding: 20px;
+    text-align: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.info p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.contact-info p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+#contact-me{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+    /* margin-left: 150px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    /* max-width: 400px; */
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+.error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+#contact-parent{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
